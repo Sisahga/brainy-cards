@@ -28,9 +28,11 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 <img width="1440" alt="Screenshot 2024-04-14 at 11 07 57 AM" src="https://github.com/Sisahga/brainy-cards/assets/80082494/ede91c3f-58a8-43c3-9bce-b1ba8761742a">
-<img width="1440" alt="Screenshot 2024-04-14 at 11 08 11 AM" src="https://github.com/Sisahga/brainy-cards/assets/80082494/a6dd907a-3561-4e55-a70b-3f7eb4d4bc21">
-<img width="1440" alt="Screenshot 2024-04-14 at 11 08 14 AM" src="https://github.com/Sisahga/brainy-cards/assets/80082494/a4b647e5-7d94-428d-a7fe-cedc404ba1f9">
 <img width="1440" alt="Screenshot 2024-04-14 at 11 09 28 AM" src="https://github.com/Sisahga/brainy-cards/assets/80082494/09ed16f7-973e-4434-ba1a-f00867472f34">
 <img width="1440" alt="Screenshot 2024-04-14 at 11 08 37 AM" src="https://github.com/Sisahga/brainy-cards/assets/80082494/ce604e91-9a83-42f9-b576-f65777ff6a61">
 <img width="1440" alt="Screenshot 2024-04-14 at 11 14 28 AM" src="https://github.com/Sisahga/brainy-cards/assets/80082494/2f91c6e7-4f0f-4e4c-bd90-f1707a81e218">
 <img width="1440" alt="Screenshot 2024-04-14 at 11 14 36 AM" src="https://github.com/Sisahga/brainy-cards/assets/80082494/dd564ef4-9e4a-426d-9279-b4bf96d307b4">
+<img width="1440" alt="Screenshot 2024-04-14 at 11 15 38 AM" src="https://github.com/Sisahga/brainy-cards/assets/80082494/e898ebe9-13a8-4cb2-8834-955fe1a7dfa7">
+<img width="1440" alt="Screenshot 2024-04-14 at 11 15 45 AM" src="https://github.com/Sisahga/brainy-cards/assets/80082494/1309e974-52b0-4656-92c4-b26b5bfa9b03">
+
+
