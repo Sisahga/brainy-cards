@@ -1,8 +1,15 @@
+# SOEN 357 - Brainy Cards
+## Contributors
+Sana Antoun - 40209806\
+Karyenne Vuong - 40157011\
+Sisahga Phimmasone - 40210015\
+Kevin Fernandez - 27768370
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run
+First, install all dependencies (make sure you have node.js installed)
 ```
 npm install
 ```
