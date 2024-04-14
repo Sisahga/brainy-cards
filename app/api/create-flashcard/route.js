@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function GET(request) {
   try {
-    const { mongoClient } = await connectMongoDB();
+    const mongoClient = await connectMongoDB();
     return NextResponse.json({ message: "Successfully connected to DB." });
   } catch (e) {
     console.log({ e });

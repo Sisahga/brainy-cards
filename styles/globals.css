@@ -40,11 +40,12 @@ body {
     background-color: white;
     border: 3px solid var(--orange);
     border-radius: 0.75rem;
-    height: 20rem;
+    min-height: 20rem;
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 .hintBtn {
@@ -62,4 +63,29 @@ body {
     background-color: var(--cream-orange);
     border: 2px solid var(--orange);
     border-radius: 0.75rem;
+}
+.flashcardOption {
+    background-color: var(--cream-orange);
+    border-radius: 0.75rem;
+    color: var(--orange);
+    cursor: pointer;
+    transition: 0.15s all ease-in-out;
+}
+.flashcardOption:hover {
+    background-color: var(--orange);
+    color: white;
+    transform: scale(1.025);
+}
+.activeOption {
+    background-color: var(--orange);
+    color: white;
+    transform: scale(1.025);
+}
+
+.skipBtn {
+    cursor: pointer;
+    transition: 0.15s all ease-in-out;
+}
+.skipBtn:hover {
+    transform: scale(1.075);
 }
