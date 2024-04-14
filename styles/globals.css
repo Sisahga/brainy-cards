@@ -15,3 +15,51 @@
 body {
     min-height: 100vh;
 }
+
+.text-orange {
+    color: var(--orange);
+}
+.text-mid-orange {
+    color: var(--mid-orange);
+}
+.text-light-orange {
+    color: var(--light-orange);
+}
+.text-pale-green {
+    color: var(--pale-green);
+}
+.text-yellow {
+    color: var(--yellow);
+}
+.text-cream-orange {
+    color: var(--cream-orange);
+}
+
+.flashcardContainer {
+    width: 60vw;
+    background-color: white;
+    border: 3px solid var(--orange);
+    border-radius: 0.75rem;
+    height: 20rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hintBtn {
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75rem;
+    transition: 0.15s all ease-in-out;
+}
+.hintBtn:hover {
+    background-color: var(--light-orange);
+}
+.flashcardTitleCtn {
+    background-color: var(--cream-orange);
+    border: 2px solid var(--orange);
+    border-radius: 0.75rem;
+}
