@@ -1,0 +1,24 @@
+.generateCardContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 0.75rem;
+    width: 100%;
+    min-height: 8rem;
+    box-shadow: 2px 3px 4px 2.5px var(--orange);
+}
+
+.uploadBtn {
+    padding: 0.5rem;
+    background-color: var(--cream-orange);
+    background-image: linear-gradient(to left, var(--cream-orange), var(--orange));
+    color: white;
+    border-radius: 0.5rem;
+    border: 1px solid var(--orange);
+    transition: 0.15s all ease-in-out;
+}
+
+.uploadBtn:hover {
+    background-image: linear-gradient(to right, var(--orange), var(--orange));
+    transform: scale(1.05);
+}

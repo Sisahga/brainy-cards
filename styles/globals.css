@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --pale-green: #E8F3D6;
+    --yellow: #FCF9BE;
+    --light-orange: #FCDC2A;
+    --orange: #F28C28;
+    --mid-orange: #F7C566;
+    --blue: #3468C0;
+    --cream-orange: #FFDCA9;
+}
+
+body {
+    min-height: 100vh;
+}

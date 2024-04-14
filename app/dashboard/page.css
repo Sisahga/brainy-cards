@@ -1,0 +1,14 @@
+.containerCard {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 2px 3px 4px 2.5px var(--orange);
+    width: 14rem;
+    cursor: pointer;
+
+    transition: 0.15s all ease-in-out;
+}
+
+.containerCard:hover {
+    transform: scale(1.05)
+}

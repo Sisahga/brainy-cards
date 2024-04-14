@@ -1,0 +1,97 @@
+.navItem {
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.75rem;
+    gap: 0.5rem;
+    transition: 0.15s all ease-in-out;
+}
+.navItem:hover {
+    background-color: var(--cream-orange);
+    color: var(--orange);
+    gap: 1rem;
+}
+.clicked {
+    background-color: var(--cream-orange);
+    color: var(--orange);
+    gap: 1rem;
+}
+
+.navbarMenu {
+    color: var(--mid-orange);
+}
+
+#cardsNavDropdown, #toolsNavDropdown {
+    position: absolute;
+    background-color: var(--orange);
+    color: var(--orange);
+    border-radius: 0.75rem;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    z-index: 1;
+}
+#cardsNavDropdown {
+    width: 16rem;
+}
+#toolsNavDropdown {
+    width: 10rem;
+}
+
+.cardItem {
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.75rem;
+    transition: 0.15s all ease-in-out;
+    color: white;
+}
+.cardItem:hover {
+    background-color: var(--cream-orange);
+    color: var(--orange);
+    gap: 1rem;
+    transform: translateX(0.25rem);
+}
+
+.searchBar {
+    border-radius: 1rem;
+    background-color: var(--cream-orange);
+    width: 20rem;
+    transition: 0.15s all ease-in-out;
+    padding: 0.5rem 1rem;
+}
+.searchBar:focus {
+    outline: none;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 2px 1px #A2A2A2;
+}
+.searchBar:focus + .searchIcon {
+    left: 100%;
+    transform: translateX(-130%);
+}
+.searchIcon {
+    color: var(--orange);
+    position: absolute;
+    left: 0.5rem;
+    transition: 0.25s all ease-in-out;
+}
+.hasText {
+    left: 100%;
+    transform: translateX(-150%);
+}
+
+.roundNavItem {  
+    border: 2px solid var(--orange);
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.15s all ease-in-out;
+}
+.roundNavItem:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.logoContainer {
+    transition: 0.15s all ease-in-out;
+}
+.logoContainer:hover {
+    transform: scale(1.1);
+}

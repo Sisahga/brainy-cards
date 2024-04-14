@@ -1,0 +1,8 @@
+.mainCredentialBtn {
+    border-radius: 0.75rem;
+    width: 50%;
+    transition: 0.15s all ease-in-out;
+}
+.mainCredentialBtn:hover {
+    transform: scale(1.1);
+}

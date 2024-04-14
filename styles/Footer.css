@@ -1,0 +1,18 @@
+.footer {
+    background-color: var(--blue);
+    color: var(--cream-orange);
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  
+  .social-icon {
+    margin-right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: var(--yellow);
+  }
+  
