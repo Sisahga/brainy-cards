@@ -117,8 +117,8 @@ const Navbar = () => {
                   className="dropdownContent"
                   style={{ display: "none" }}
                 >
-                  {userCards.map((card) => (
-                    <Link href={"/flashcards"}>
+                  {userCards.map((card, index) => (
+                    <Link key={index} href={"/flashcards"}>
                       <li className="cardItem" key={card}>
                         <b>{card}</b>
                       </li>
