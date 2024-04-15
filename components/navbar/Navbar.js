@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "@/styles/Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,6 +8,8 @@ import {
   faPlus,
   faBell,
   faPerson,
+  faToolbox,
+  faBolt,
 } from "@fortawesome/free-solid-svg-icons";
 import SearchBar from "./search-bar/SearchBar";
 import Link from "next/link";
@@ -20,6 +22,12 @@ const Navbar = () => {
     "SOEN 343 Final",
   ];
   const tools = ["Flashcards", "Quizzes", "Study Guide", "Upload Notes"];
+
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
 
   const handleYourCardsClicked = () => {
     const cardsNavDropdown = document.getElementById("cardsNavDropdown");
@@ -60,7 +68,7 @@ const Navbar = () => {
           if (liDropdown.classList.contains("clicked")) {
             if (!liDropdown.contains(e.target)) {
               liDropdown.classList.remove("clicked");
-              const angleDown = liDropdown.querySelector("svg");
+              const angleDown = liDropdown.querySelectorAll("svg")[1];
               angleDown.style.transform = "rotate(0deg)";
               const dropdownContent = liDropdown.nextElementSibling;
               dropdownContent.style.display = "none";
@@ -93,6 +101,10 @@ const Navbar = () => {
                   className={`navItem flex items-center navItemDropdown`}
                   onClick={handleYourCardsClicked}
                 >
+                  <FontAwesomeIcon
+                    icon={faBolt}
+                    style={{ display: isLoaded ? "block" : "none" }}
+                  />
                   <b>Your Cards</b>
                   <FontAwesomeIcon
                     icon={faAngleDown}
@@ -106,9 +118,11 @@ const Navbar = () => {
                   style={{ display: "none" }}
                 >
                   {userCards.map((card) => (
-                    <li className="cardItem" key={card}>
-                      <b>{card}</b>
-                    </li>
+                    <Link href={"/flashcards"}>
+                      <li className="cardItem" key={card}>
+                        <b>{card}</b>
+                      </li>
+                    </Link>
                   ))}
                 </ul>
               </div>
@@ -118,6 +132,10 @@ const Navbar = () => {
                   className="navItem flex items-center navItemDropdown"
                   onClick={handleToolsClicked}
                 >
+                  <FontAwesomeIcon
+                    icon={faToolbox}
+                    style={{ display: isLoaded ? "block" : "none" }}
+                  />
                   <b>Tools</b>
                   <FontAwesomeIcon
                     icon={faAngleDown}

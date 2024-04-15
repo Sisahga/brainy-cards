@@ -1,8 +1,17 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { set } from "mongoose";
 
 const SearchBar = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   const handleSearchSubmit = (e) => {
     if (e.key === "Enter") {
       const searchBarInput = document.getElementById("searchBarInput");
@@ -20,6 +29,11 @@ const SearchBar = () => {
     }
   };
 
+  const handleIconLoad = () => {
+    const searchIcon = document.getElementById("searchIcon");
+    searchIcon.style.display = "block";
+  };
+
   return (
     <div
       className="searchBarCtn flex items-center"
@@ -34,7 +48,13 @@ const SearchBar = () => {
         style={{ color: "var(--mid-orange)" }}
         autoComplete="off"
       />
-      <FontAwesomeIcon icon={faSearch} className="searchIcon" />
+      <FontAwesomeIcon
+        id="searchIcon"
+        icon={faSearch}
+        className="searchIcon"
+        size="1x"
+        style={{ visibility: isLoaded ? "visible" : "hidden" }}
+      />
     </div>
   );
 };
