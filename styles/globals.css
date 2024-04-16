@@ -89,3 +89,70 @@ body {
 .skipBtn:hover {
     transform: scale(1.075);
 }
+
+.authForm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 3;
+    background-color: #fff;
+    border-radius: 0.75rem;
+    width: 518px;
+}
+#signupForm {
+    height: 38rem;
+}
+#loginForm {
+    height: 26rem;
+}
+.authFormInput {
+    padding: 0.5rem;
+    border-radius: 0.55rem;
+    background-color: var(--cream-orange);
+    color: var(--orange);
+}
+.authForm label {
+    color: var(--mid-orange);
+}
+.authFormBtn {
+    background-color: var(--orange);
+    color: white;
+    border-radius: 0.55rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.15s all ease-in-out;
+}
+.authFormBtn:hover {
+    transform: scale(1.05);
+}
+.cancelAuthForm {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+}
+.cancelAuthFormBtn {
+    color: #FFF;
+    width: 36px;
+    height: 36px;
+    background-color: var(--mid-orange);
+    opacity: 0.5;
+    transition: 0.15s all ease-in-out;
+}
+.cancelAuthFormBtn:hover {
+    opacity: 1;
+}
+
+
+.overlay {
+    position: fixed; /* Positioned relative to the viewport */
+    top: 0; /* Top position */
+    left: 0; /* Left position */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 2; /* Makes sure the overlay is on top */
+    display: none; /* By default, it's not displayed */
+  }
