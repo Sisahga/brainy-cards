@@ -148,10 +148,12 @@ const Navbar = () => {
                   className="dropdownContent"
                   style={{ display: "none" }}
                 >
-                  {tools.map((tool) => (
-                    <li className="cardItem" key={tool}>
-                      <b>{tool}</b>
-                    </li>
+                  {tools.map((tool, index) => (
+                    <Link key={index} href={"/flashcards"}>
+                      <li className="cardItem" key={tool}>
+                        <b>{tool}</b>
+                      </li>
+                    </Link>
                   ))}
                 </ul>
               </div>
