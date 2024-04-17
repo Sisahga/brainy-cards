@@ -86,7 +86,7 @@ const Navbar = () => {
         style={{ backgroundColor: "#FFF" }}
       >
         <div className="flex w-1/6 logoContainer">
-          <Link href={"/"}>
+          <Link href={"/dashboard"}>
             <p style={{ fontSize: "1.25rem", color: "var(--orange)" }}>
               <b>Brainy Cards</b>
             </p>
